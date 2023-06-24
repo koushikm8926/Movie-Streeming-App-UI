@@ -16,8 +16,8 @@ export default function App() {
         initialRoute="Home"
         activeColor="#02ad94"
         inactiveColor="#dedede"
-        barStyle={{ backgroundColor: "#0f0f0f", padding: 4 }}
-        style={{ backgroundColor: "#000" }}
+        barStyle={{ backgroundColor: "#0f0f0f", }}
+        style={{ backgroundColor: "#f0f0f0",  }}
         
       >
         <Tab.Screen
@@ -25,7 +25,7 @@ export default function App() {
           component={Home}
           options={{
             tabBarLabel: '',
-            tabBarIcon: ({ color }) => (
+            tabBarIcon: ({color }) => (
               <MaterialCommunityIcons name="home" color={color} size={30}  />
             ),
           }}
@@ -55,11 +55,4 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+
